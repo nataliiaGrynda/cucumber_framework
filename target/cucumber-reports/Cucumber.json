@@ -1,0 +1,273 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2918816200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 9671300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HeroAppSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 32500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 415200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtsySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 846100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Validate Etsy main navigation header items",
+        "description": "",
+        "id": "etsy-landing-page-validation;validate-etsy-main-navigation-header-items",
+        "after": [
+          {
+            "result": {
+              "duration": 3753996800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1382216900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user navigates to \"https://www.etsy.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.etsy.com/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 394442100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user should see below menu item links",
+            "match": {
+              "location": "EtsySteps.user_should_see_below_menu_item_links(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Summer Clothing \u0026 Accessories",
+                  "Jewelry \u0026 Accessories",
+                  "Clothing \u0026 Shoes",
+                  "Home \u0026 Living",
+                  "Wedding \u0026 Party",
+                  "Toys \u0026 Entertainment",
+                  "Art \u0026 Collectibles",
+                  "Craft Supplies",
+                  "Gifts \u0026 Gift Cards"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@temp"
+          }
+        ]
+      }
+    ],
+    "name": "Etsy Landing Page Validation",
+    "description": "",
+    "id": "etsy-landing-page-validation",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/etsy.feature",
+    "tags": []
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1196001200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GoogleSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 744500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HeroAppSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 23700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 130700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "EtsySteps.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 230800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "WikipediaSteps.setup()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Validate Wikipedia main languages",
+        "description": "",
+        "id": "wiki-search-functionality;validate-wikipedia-main-languages",
+        "after": [
+          {
+            "result": {
+              "duration": 3665235700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.teardown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 520038700,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user navigates to \"https://www.wikipedia.org/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.wikipedia.org/\"",
+                  "offset": 18
+                }
+              ],
+              "location": "BaseSteps.userNavigatesTo(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 286460400,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user should see below languages around the logo",
+            "match": {
+              "location": "WikipediaSteps.userShouldSeeBelowLanguagesAroundTheLogo(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "English",
+                  "日本語",
+                  "Español",
+                  "Русский",
+                  "Deutsch",
+                  "Français",
+                  "Italiano",
+                  "中文",
+                  "Português",
+                  "Polski"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@temp"
+          }
+        ]
+      }
+    ],
+    "name": "Wiki Search Functionality",
+    "description": "",
+    "id": "wiki-search-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/wikipedia.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
